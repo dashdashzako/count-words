@@ -15,11 +15,14 @@
     "version": "npm run format && git add -A src",
     "postversion": "git push origin master --tags"
   },
+  "files": [
+    "lib/**/*"
+  ],
   "repository": {
     "url": "https://github.com/dashdashzako/count-words"
   },
   "author": "dashdashzako",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dashdashzako/count-words/issues"
   },
