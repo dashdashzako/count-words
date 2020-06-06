@@ -1,0 +1,42 @@
+{
+  "name": "@dashdashzako/count-words",
+  "version": "0.0.0",
+  "description": "Counting words. With elegance.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "jest --config jestconfig.json",
+    "coverage": "jest --config jestconfig.json --coverage",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint -c .eslintrc.js \"src/**/*.ts\"",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push origin master --tags"
+  },
+  "repository": {
+    "url": "https://github.com/dashdashzako/count-words"
+  },
+  "author": "dashdashzako",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dashdashzako/count-words/issues"
+  },
+  "homepage": "https://github.com/dashdashzako/count-words#readme",
+  "dependencies": {
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
+  }
+}
