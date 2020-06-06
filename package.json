@@ -1,6 +1,6 @@
 {
   "name": "@dashdashzako/count-words",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Counting words. With elegance.",
   "main": "src/index.js",
   "scripts": {
