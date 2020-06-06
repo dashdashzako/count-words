@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "description": "Counting words. With elegance.",
   "main": "src/index.js",
-  "type": "module",
   "scripts": {
     "build": "babel src -d lib",
     "test": "jest --config jestconfig.json",
